@@ -1,0 +1,157 @@
+/* 1. General Setup */
+body {
+  background-color: #fff0f3;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: #ff4d6d;
+  font-size: 3.5rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.instruction {
+  color: #ff8fa3;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* 2. Floating Polaroid */
+.photo-frame {
+  background: white;
+  padding: 15px 15px 35px 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: rotate(-2deg);
+  margin-bottom: 40px;
+  max-width: 280px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  /* This makes it "Bob" up and down */
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(-2deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(-2deg) translateY(-15px);
+  }
+  100% {
+    transform: rotate(-2deg) translateY(0px);
+  }
+}
+
+.photo-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.photo-frame p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ff4d6d;
+}
+
+/* 3. Bento Grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  gap: 15px;
+  width: 100%;
+}
+
+.reason-card {
+  background: white;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.1);
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 1px solid #ffccd5;
+}
+
+/* Bento Shapes */
+.reason-card:nth-child(1) {
+  grid-column: span 2;
+}
+.reason-card:nth-child(5) {
+  grid-row: span 2;
+}
+.reason-card:nth-child(9) {
+  grid-column: span 2;
+}
+
+/* 4. Hover Effects */
+.reason-card h3 {
+  font-family: "Dancing Script", cursive;
+  color: #ff4d6d;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.reason-card p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #590d22;
+  margin-top: 10px;
+}
+
+.reason-card:hover {
+  background-color: #ff4d6d;
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.reason-card:hover h3,
+.reason-card:hover p {
+  color: white;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 5. Mobile Responsiveness */
+@media (max-width: 768px) {
+  .reasons-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reason-card {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}
