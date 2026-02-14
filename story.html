@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Our Story - Tifemi</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <section id="start-screen">
+            <div class="heart-lock" onclick="revealStory()">❤️</div>
+            <h2 class="dancing-font">The Prophecy...</h2>
+        </section>
+
+        <section id="story-screen" style="display: none; padding: 20px;">
+            <div class="paper">
+                <h2 class="dancing-font" style="text-align: center; color: #ff4d6d;">My Tifemi,</h2>
+                <p> [PASTE YOUR FULL LETTER TEXT HERE] </p>
+                <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:#ff4d6d; text-decoration:none;">← Back to My Reasons</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function revealStory() {
+            document.getElementById('start-screen').style.display = 'none';
+            document.getElementById('story-screen').style.display = 'block';
+            confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
+        }
+    </script>
+</body>
+</html>
