@@ -94,6 +94,34 @@ h1 {
   cursor: pointer;
   border: 1px solid #ffccd5;
 }
+.story-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.story-button {
+  background-color: #ff4d6d; /* Nice Valentine Pink */
+  color: white !important; /* Forces text to stay white */
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.story-button:hover {
+  background-color: #ff8fa3;
+  transform: scale(1.05);
+}
 
 /* Bento Shapes */
 .reason-card:nth-child(1) {
