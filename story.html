@@ -1,35 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <title>Our Story - Tifemi</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Happy Valentine's Day Tifemi</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="game-container">
-        <section id="start-screen">
-            <div class="heart-lock" onclick="revealStory()">❤️</div>
-            <h2 class="dancing-font">The Prophecy...</h2>
-        </section>
+      <section id="start-screen">
+        <div class="heart-lock" onclick="revealStory()">❤️</div>
+        <h2 class="dancing-font">Tap the heart, Tifemi...</h2>
+      </section>
 
-        <section id="story-screen" style="display: none; padding: 20px;">
-            <div class="paper">
-                <h2 class="dancing-font" style="text-align: center; color: #ff4d6d;">My Tifemi,</h2>
-                <p> [PASTE YOUR FULL LETTER TEXT HERE] </p>
-                <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:#ff4d6d; text-decoration:none;">← Back to My Reasons</a>
-            </div>
-        </section>
+      <section id="story-screen" style="display: none">
+        <div class="paper">
+          <h2
+            class="dancing-font"
+            style="
+              text-align: center;
+              margin-bottom: 30px;
+              color: #ff4d6d;
+              font-size: 2.5rem;
+            "
+          >
+            My Tifemi,
+          </h2>
+
+          <p>
+            It still makes me laugh that our entire love story started with a
+            prophecy I made on Twitter like a chaotic main character.<br />
+            “The first person who DMs me will become my person.”<br />
+            Who gave me that confidence? Who authorised that madness? And why
+            was it you?
+          </p>
+
+          <p style="text-align: center; font-style: italic; margin: 25px 0">
+            “Hey beautiful.”
+          </p>
+
+          <p>
+            That was it. That was the line. Economical. Dangerous.
+            Life-altering.<br />
+            I didn’t know that a lowercase greeting would become my emotional
+            origin story. I didn’t know that the man behind that DM would become
+            my safe place, my long-conversation partner, my voice of reason, my
+            soft landing and my favourite distraction.
+          </p>
+
+          <p>
+            We started with memes and small talk. Somehow we escalated to
+            purpose, faith, childhood wounds, the future, and whether the
+            universe approved of us. The range has always been elite.
+          </p>
+
+          <p>
+            I don’t know how we can go from absolute nonsense to soul-searching
+            in five minutes, but I love that about us. I love that about you.
+          </p>
+
+          <p>
+            You were steady from the beginning. Calm in a way that made my
+            overthinking look dramatic. You kept calling when I ghosted you like
+            a confused villain. You stayed patient when I was pretending not to
+            care. And when I finally asked you what you’d miss if we stopped
+            talking, you didn’t hesitate.
+          </p>
+
+          <p
+            style="
+              text-align: center;
+              font-weight: bold;
+              font-size: 1.2rem;
+              color: #ff4d6d;
+            "
+          >
+            “I love you.”
+          </p>
+
+          <p>
+            Just like that. No performance. No begging. Just certainty.<br />
+            That moment still sits in my chest.
+          </p>
+
+          <p>
+            I love you because you have always been intentional with me. In your
+            words. In your effort. In your touch. In the way you remind me to
+            eat. In the way you give advice that annoys me because it’s right.
+            In the way you look at me when you think I’m not watching — and even
+            when I am.
+          </p>
+
+          <p>
+            I love you because loving you feels grown. It feels deliberate. It
+            feels chosen.<br />
+            And also… slightly unhinged.
+          </p>
+
+          <p>
+            Because how did I go from “I need to see him first” to packing my
+            bags for Lagos with butterflies doing marathon training in my
+            stomach? How did I go from astrology spreadsheets to knowing, deep
+            down, that I would choose you even if the stars disagreed?
+          </p>
+
+          <div class="beats">
+            <p>
+              You are my man. My man. My man.<br />
+              <strong>My calm.</strong>
+            </p>
+            <p><strong>My chaos.</strong></p>
+            <p><strong>My intelligent conversations at 2am.</strong></p>
+            <p><strong>My “have you eaten?” reminder.</strong></p>
+            <p><strong>My soft place.</strong></p>
+            <p><strong>My safe hands.</strong></p>
+            <p><strong>My favourite risk I ever took.</strong></p>
+          </div>
+
+          <p>
+            I love the way you hold me gently but never treat me like glass. I
+            love the way you know me — not just my favourite colour or food, but
+            the way my mind works. The way my emotions move. The way my body
+            responds to you. There is care in everything you do. Even in the
+            playful mischief. Especially in that.
+          </p>
+
+          <p>
+            Our love didn’t start perfectly. It started messy. Funny. Dramatic.
+            Slightly delusional. And somehow, that makes it even more
+            beautiful.<br />
+            Because we chose it. We kept choosing it.
+          </p>
+
+          <p>And I will keep choosing you.</p>
+
+          <p class="signature">
+            Happy Valentine’s Day,<br />
+            my prophecy, my DM, my entire emotional curriculum.<br /><br />
+            Still very obsessed.<br />
+            Highly recommend....
+          </p>
+        </div>
+      </section>
     </div>
 
     <script>
-        function revealStory() {
-            document.getElementById('start-screen').style.display = 'none';
-            document.getElementById('story-screen').style.display = 'block';
-            confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
+      function revealStory() {
+        // Hide start screen
+        document.getElementById("start-screen").style.display = "none";
+        // Show story
+        document.getElementById("story-screen").style.display = "block";
+
+        // Launch Confetti
+        var duration = 5 * 1000;
+        var animationEnd = Date.now() + duration;
+        var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
         }
+
+        var interval = setInterval(function () {
+          var timeLeft = animationEnd - Date.now();
+
+          if (timeLeft <= 0) {
+            return clearInterval(interval);
+          }
+
+          var particleCount = 50 * (timeLeft / duration);
+          confetti(
+            Object.assign({}, defaults, {
+              particleCount,
+              origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+            }),
+          );
+          confetti(
+            Object.assign({}, defaults, {
+              particleCount,
+              origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+            }),
+          );
+        }, 250);
+      }
     </script>
-</body>
+  </body>
 </html>
